@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101b3d">
+  <title>English AI</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo">A</span><div><b>English AI</b><small>Seu inglês, no seu ritmo</small></div></div>
+    <span class="level">INICIANTE</span>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">BEM-VINDO(A) À SUA JORNADA</p>
+      <h1>Aprenda inglês<br><em>falando de verdade.</em></h1>
+      <p class="muted">Aulas curtas, frases úteis e prática de pronúncia para começar do zero.</p>
+      <div class="progress-wrap"><div class="progress-label"><span>Seu progresso</span><b id="progressText">0% concluído</b></div><div class="bar"><i id="progressBar"></i></div></div>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="learn">Aprender</button>
+      <button class="tab" data-tab="speak">Conversar</button>
+      <button class="tab" data-tab="words">Vocabulário</button>
+    </nav>
+
+    <section id="learn" class="panel">
+      <div class="section-heading"><div><p class="eyebrow">PRIMEIROS PASSOS</p><h2>Suas aulas</h2></div><span class="round-icon">✦</span></div>
+      <article class="lesson-card">
+        <div class="lesson-top"><span class="lesson-number">AULA 01</span><span class="time">5 min</span></div>
+        <h3> cumprimentos e apresentações</h3>
+        <p>Aprenda a dizer olá, seu nome e perguntar como alguém está.</p>
+        <div class="lesson-bottom"><span>6 frases essenciais</span><button id="startLesson" class="primary">Começar aula <b>→</b></button></div>
+      </article>
+      <div class="section-heading second"><h2>Como funciona</h2></div>
+      <div class="feature-grid">
+        <div class="feature"><span>🎧</span><b>Escute</b><small>Ouça a pronúncia em inglês.</small></div>
+        <div class="feature"><span>🎙️</span><b>Fale</b><small>Pratique usando seu microfone.</small></div>
+        <div class="feature"><span>🧠</span><b>Memorize</b><small>Revise frases do dia a dia.</small></div>
+        <div class="feature"><span>📈</span><b>Evolua</b><small>Acompanhe suas aulas concluídas.</small></div>
+      </div>
+    </section>
+
+    <section id="speak" class="panel hidden">
+      <p class="eyebrow">PRÁTICA DE CONVERSAÇÃO</p><h2>Vamos conversar?</h2>
+      <p class="muted">Escolha uma frase, escute e tente repetir em voz alta. O reconhecimento de voz depende do navegador e da conexão.</p>
+      <div class="chat-card"><div class="bubble bot">Hello! What's your name?<small>Olá! Qual é o seu nome?</small></div><div class="translation">Tente responder: <b>My name is...</b></div><button class="secondary" id="listenPrompt">🔊 Ouvir frase</button><button class="primary full" id="recordBtn">🎙️ Praticar minha fala</button><p id="speechResult" class="result">Sua resposta aparecerá aqui.</p></div>
+    </section>
+
+    <section id="words" class="panel hidden">
+      <p class="eyebrow">PALAVRAS PARA O DIA A DIA</p><h2>Seu vocabulário</h2>
+      <div id="wordList" class="word-list"></div>
+    </section>
+  </main>
+
+  <div id="lessonModal" class="modal hidden">
+    <div class="modal-box"><button class="close" id="closeLesson">✕</button><p class="eyebrow" id="lessonCount">AULA 01 • FRASE 1 DE 6</p><h2 id="englishPhrase">Hello!</h2><p id="portuguesePhrase" class="muted">Olá!</p><button class="secondary full" id="listenLesson">🔊 Escutar pronúncia</button><div class="tip">Dica: escute com atenção e repita em voz alta.</div><div class="modal-actions"><button class="secondary" id="previousPhrase">Voltar</button><button class="primary" id="nextPhrase">Próxima →</button></div></div>
+  </div>
+  <footer>Feito para você começar do zero. <span>English AI · versão 1.0</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

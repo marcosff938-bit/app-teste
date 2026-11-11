@@ -1,0 +1,18 @@
+ENGLISH AI - PRIMEIRA VERSÃO
+
+Esta é uma primeira versão demonstrativa do aplicativo.
+Inclui:
+- Uma aula inicial com seis frases e áudio de pronúncia (voz do dispositivo).
+- Prática de fala usando reconhecimento de voz quando suportado pelo navegador.
+- Vocabulário básico com áudio.
+- Progresso salvo localmente no dispositivo.
+- Estrutura PWA para adicionar à tela inicial.
+
+IMPORTANTE:
+Para instalar como app no iPhone, os arquivos precisam estar publicados em um endereço HTTPS.
+Abrir o HTML diretamente pelo app Arquivos não instala o PWA. Publique esta pasta em um serviço de hospedagem estática HTTPS (por exemplo, GitHub Pages, Netlify ou Vercel), abra o endereço no Safari, toque em Compartilhar > Adicionar à Tela de Início.
+
+Limitações desta versão:
+- Ainda não há professor de IA real nem conversa livre com respostas inteligentes.
+- O reconhecimento de voz depende do suporte do Safari/iOS, permissão do microfone e conexão.
+- Não há conta/login nem sincronização entre dispositivos.
